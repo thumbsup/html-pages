@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: arial, sans-serif;
+        font-size: 16px;
+        margin: 7em 0 1em 0;
+        padding: 0;
+        text-align: center;
+      }
+      .box {
+        background: #17baef;
+        background: url('bg.jpg') center center repeat;
+        background-size: cover;
+        border-radius: 0.5em;
+        color: #fff;
+        display: inline-block;
+        padding: 3em 6em;
+        text-align: center;
+        width: 20em;
+      }
+      h1 {
+        font-size: 28px;
+        font-weight: normal;
+      }
+      input {
+        border: 1px solid #40a5c5;
+        color: #053c4e;
+        font-size: 1.3em;
+        display: block;
+        margin: 0 auto 0.5em auto;
+        padding: 0.3em 0.6em;
+        width: 12em;
+      }
+      form {
+        margin-bottom: 1em;
+      }
+      button {
+        background: #053c4e;
+        border: 1px solid #053c4e;
+        border-radius: 5px;
+        color: #fff;
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 1em auto 0 auto;
+        padding: 8px 30px;
+        width: 9em;
+      }
+      #username {
+        display: none;
+      }
+      @media screen and (max-width: 700px) {
+        body {
+          margin: 1em 0;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        body {
+          font-size: 0.7em;
+        }
+        section {
+          padding: 3em;
+          width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="box">
+      <h1>Our photo album</h1>
+      <form method="post" action="/login">
+        <input id="username" type="text" placeholder="username" value="guest" />
+        <input id="password" type="password" />
+        <button type="submit">LOGIN</button>
+      </form>
+    </section>
+  </body>
+</html>
